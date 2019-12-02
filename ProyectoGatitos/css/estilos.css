@@ -1,0 +1,51 @@
+html, body{
+    /*Espaciado que tiene hacía adentro*/
+    padding:0px;
+    /*Espaciado que tiene hacía afuera*/
+    margin:0px;
+    /* Tamaño de la letra */
+    font-size: 12px;
+    /* Tipo de fuente */
+    font-family: Helvetica;
+}
+
+nav{
+    /* Agrupa los elementos de izquierda a derecha */
+    display: flex;
+    /* Color de fondo */
+    background-color: #7ACC2D;
+    padding: 10px;
+    /* Color de la letra */
+    color: white;
+    /* Justifica el contenido del nav colocando un espacio */
+    justify-content: space-between;
+    /* Alinea todo lo definido en el centro */
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    padding-left: 10px;
+    /* Define que no se quiere tener ningún decorativo con las listas */
+    list-style: none;
+}
+
+nav li a{
+    color: black;
+    /* No se define ninguna decoración con la etiqueta a */
+    text-decoration: none;
+}
+
+/* Define que cuando el mouse esté sobre el archivo tenga las siguientes
+características definidas */
+nav li a:hover{
+    color: white;
+}
+
+.main_section{
+    padding: 20%;
+    text-align: center;
+}
