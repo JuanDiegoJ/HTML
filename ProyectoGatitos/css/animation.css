@@ -1,0 +1,91 @@
+.fadeIn{
+    /* Define la duración que va a tener la animación*/
+    animation-duration: 4s;
+    -webkit-animation-duration: 4s;
+    /* Cumple la función de definir que las animaciones
+    se van a realizar tanto de ida como de regreso */
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    /* Le da un nombre a la animación */
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+}
+
+/* 
+Realizar animaciones con el método FadeIn requiere
+de 2 cosas 
+1. Definir la clase 
+2. @keyframes
+*/
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    } to{
+        opacity: 1;
+    }
+}
+
+.fadeInDown{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown{
+    from{
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+    } to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeInUp{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp{
+    from{
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+    } to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeInLeft{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInLeft;
+}
+
+@keyframes fadeInLeft{
+    from{
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+    } to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeInRight{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInRight;
+}
+
+@keyframes fadeInRight{
+    from{
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+    } to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+    }
+}
